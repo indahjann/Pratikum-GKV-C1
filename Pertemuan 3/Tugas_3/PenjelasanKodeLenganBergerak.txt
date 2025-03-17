@@ -1,0 +1,31 @@
+Nama : Indah Nurul Janah
+Lab : GKV C1
+
+Bagaimana kode lengan bekerja?
+kode lengan membuat dua bentuk yaitu lengan atas dan lengan Bawah, dengan pangkal di bahu dan di siku yang bisa di rotasi. Bentuk segmennya kubus persegi Panjang. Variabel 'shoulder' dan 'elbow' menyimpan sudut rotasi untuk masing2 pangkal atau sendi.
+
+Fungsi 'display()' menggambar lengan dengan memanipulasi matriks transformasi  :
+Transformasi bahu : 
+	-Translasi ke posisi (-1.0, 0.0, 0.0)
+	- Rotasi sebesar nilai `shoulder` pada sumbu Z
+	- Translasi (1.0, 0.0, 0.0) untuk memindahkan pivot point
+	- Menggambar kubus persegi panjang (2.0 × 0.4 × 1.0) sebagai segmen bahu
+
+Transformasi siku :
+	- Translasi ke ujung segmen bahu (1.0, 0.0, 0.0)
+	- Rotasi sebesar nilai `elbow` pada sumbu Z
+	- Translasi lagi (1.0, 0.0, 0.0)
+	- Menggambar kubus persegi panjang lain sebagai segmen siku
+
+Transformasi matriks menggunakan stack (glPushMatrix() dan glPopMatrix) untuk memastikan bahwa rotasi bahu mempengaruhi seluruh lengan, sedangkan rotasi siku hanya mempengaruhi segmen siku.
+
+fungsi (`keyboard()`) untuk  pengguna dapat mengontrol gerakan lengan melalui keyboard : 
+- Tombol 's': Memutar bahu searah jarum jam (menambah 5 derajat)
+- Tombol 'S': Memutar bahu berlawanan arah jarum jam (mengurangi 5 derajat)
+- Tombol 'e': Memutar siku searah jarum jam
+- Tombol 'E': Memutar siku berlawanan arah jarum jam
+- Tombol ESC (27): Keluar dari program
+
+
+
+
