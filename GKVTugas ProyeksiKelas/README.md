@@ -1,10 +1,10 @@
-Proyeksi Orthogonal
+Proyeksi Orthogonal : 
 Plan View (Tampak Atas)
-![image](https://github.com/user-attachments/assets/c8dd3f97-a693-4b66-b386-33c448e67949)
+![image](https://github.com/user-attachments/assets/97bab018-ede5-4a7c-ad33-dcad8886d5d4)
 
 
 Front View (Tampak Depan)
-![image](https://github.com/user-attachments/assets/b0b29570-c7e5-47ff-adf0-4535592998d0)
+![image](https://github.com/user-attachments/assets/ef807234-8b4c-4060-bbbc-edd4742b89df)
 
 
 Side View (Tampak Samping)
